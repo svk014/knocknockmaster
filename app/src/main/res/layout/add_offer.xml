@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:itemListActivity=".activities.OfferCreationActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="importAndShowImage"
+        android:text="@string/open_gallery" />
+
+    <ImageView
+        android:id="@+id/image_selected_image"
+        android:layout_width="225dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_place_holder_image" />
+
+    <Button
+        android:id="@+id/button_upload_offer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/upload_offer"
+        android:onClick="uploadData"/>
+
+    <EditText
+        android:id="@+id/editText_offer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_selected_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:hint="@string/enter_title_of_offer" />
+
+    <EditText
+        android:id="@+id/editText_offer_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:layout_below="@+id/editText_offer_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="start|top"
+        android:hint="@string/enter_offer_message"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/allow_order_message"
+        android:id="@+id/checkbox_allow_ordering"
+        android:layout_below="@+id/editText_offer_message"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

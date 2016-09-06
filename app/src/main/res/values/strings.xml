@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KnockKnockMaster</string>
+    <string name="open_gallery">Select Image from Gallery</string>
+    <string name="offers">OFFERS</string>
+    <string name="upload_offer">UPLOAD OFFER</string>
+    <string name="enter_title_of_offer">Enter Title of Offer.</string>
+    <string name="enter_offer_message">Enter Offer Message</string>
+    <string name="allow_order_message">Allow user to place order directly through a \'Order\' button.</string>
+    <string name="random_long_string">This is a very very very long version of an equally long text. And it gets a lot longer.</string>
+    <string name="pending_orders">PENDING ORDERS</string>
+    <string name="accepted_orders">ACCEPTED ORDERS</string>
+    <string name="dispatched_orders">DISPATCHED ORDERS</string>
+    <string name="delivered_orders">DELIVERED ORDERS</string>
+    <string name="inventory">INVENTORY</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_category">Item Category</string>
+    <string name="item_section">Item Section</string>
+    <string name="item_price">Item Price</string>
+    <string name="item_discount">Item Discount Percentage (0 &#8211; 100)</string>
+    <string name="item_image_url">Item Image URL</string>
+    <string name="search">Search</string>
+</resources>
