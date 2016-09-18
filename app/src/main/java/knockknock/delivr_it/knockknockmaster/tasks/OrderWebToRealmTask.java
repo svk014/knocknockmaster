@@ -38,7 +38,7 @@ public class OrderWebToRealmTask extends AsyncTask<Void, Void, JSONObject> {
 
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
             String mostRecentlyStoredOrder = OrderStorageManager.getMostRecentlyStoredOrder(pendingOrdersActivity);
-            nameValuePairs.add(new BasicNameValuePair("current_most_recent_order", mostRecentlyStoredOrder));
+            nameValuePairs.add(new BasicNameValuePair("current_most_recent_order", "0"));
             httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
             HttpResponse response = httpclient.execute(httppost);
